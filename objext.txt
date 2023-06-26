@@ -1,0 +1,7 @@
+In computer science, an object is a value in memory which is possibly 
+referenced by an identifier.
+
+#In JavaScript, objects are the only mutable values
+#In JavaScript, objects can be seen as a collection of properties
+
+#Objects are ad-hoc key-value pairs, so they are often used as maps.
