@@ -1,0 +1,35 @@
+1)Javascript having two versions mainly
+a)ES5 b)ES6
+
+var in ES5
+let and const in ES6
+
+main difference between the var and let is that
+
+##var is function scoped hai means apn ekbar var declare kre to yahi variable
+##apn sare function me kidar bhi use kr sakte
+
+##let is braces scoped hai mean apn ye only braces me tak hi use kr sakte
+
+#function abc(){
+  for(var i=1; i<3; i++){
+   console.log(i);
+}
+console.log(i+1);
+
+}
+//output is 1,2,4 here we can say that the var is function scoped hai
+
+
+#function abc(){
+ for(let i=1; i<3; i++){
+  console.log(i);
+}
+console.log(i);
+}
+//output is i is not declare here we can say that the let is only braces scooped 
+means we can access the variable value upto the closing braces
+
+
+##var adds itself to the widow object
+##let does not add itseld to the window object
