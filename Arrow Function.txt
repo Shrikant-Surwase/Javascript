@@ -1,0 +1,1 @@
+Arrow Function is not Hoisted means that we have first initialize before use
