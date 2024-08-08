@@ -87,3 +87,20 @@ group of statement is used where the js expect a single statement
 e.g. is if(conditon) true but what if we want multiple statement so at that time we need scope
 one imp this is let and const is block scope means we can access the element only in the give block scope not outer that
 but var is global scope we can access it throughout the scope
+19) What is closures?
+Now its time to learn hard topic , we know that we have lexical scope for a function and varible in that lexical scope can be access by using this function
+so closure is the function bounded with the lexical environment/scope simple
+```javascript
+
+function init() {
+    var x = 9;
+    function a() {
+        console.log(x);
+    }
+    return a;
+}
+const z = init();
+console.log(z());
+
+```
+so here we can see z store the function along with its lexical scope or environment means we also have the value of x in z this is nothing but the closure which is used to return the function in the function
