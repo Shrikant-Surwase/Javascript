@@ -104,3 +104,27 @@ console.log(z());
 
 ```
 so here we can see z store the function along with its lexical scope or environment means we also have the value of x in z this is nothing but the closure which is used to return the function in the function
+
+20) Call Back:
+its very interesting topic in js in which we can use call back to solve one problem in js which is DEPENDANCY
+e.g. suppose we have ecoomerce website in which we have to create one functionality in which user placed order and then go to the payment dashboard so this functionality is address like this
+```javascript
+api.placedorder()
+api.payment()
+//this is work fine but proble is that what happped if the placeorder api doesn't give response so means no matter the response from placeorder api the payment api is //called and run so this is not the corret way to implement the functionality
+//so to overcome this we use CALLBACK
+//like
+api.placeorder(data,()=>{
+api.payment()
+)
+```
+21) Promises:
+Now the two problems is arises due to callback
+1) Callback Hell
+2) Inversion of control: means user/devloper does not have control on code so
+so to overcome this problem PROMISES is created
+Promises is nothing but a empty object in which data is sored after calling api
+It has three state 1) pending 2) fullfilled 3) reject
+Promises are mutable means we can control the data in promise object so user now have control over the code
+.then is the heart of promises it responsible that the pormise is fullfilled and then a callback is invoked
+
