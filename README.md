@@ -120,11 +120,15 @@ api.payment()
 ```
 21) Promises:
 Now the two problems is arises due to callback
-1) Callback Hell
-2) Inversion of control: means user/devloper does not have control on code so
+ Callback Hell
+ Inversion of control: means user/devloper does not have control on code so
 so to overcome this problem PROMISES is created
-Promises is nothing but a empty object in which data is sored after calling api
+Promises is nothing but a container for the future value
 It has three state 1) pending 2) fullfilled 3) reject
 Promises are mutable means we can control the data in promise object so user now have control over the code
 .then is the heart of promises it responsible that the pormise is fullfilled and then a callback is invoked
+
+22) Async and Await:
+    Note that async function always return the promise
+
 
